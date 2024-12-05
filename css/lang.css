@@ -1,0 +1,21 @@
+.language-toggle-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+    margin-top: 7px;
+    
+}
+
+.language-toggle-btn:hover .language-icon {
+    transform: scale(1.1);
+}
+
+.language-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease;
+}
