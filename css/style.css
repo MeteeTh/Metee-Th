@@ -13086,8 +13086,9 @@ h5,
 }
 
 .testimony-section .owl-carousel {
-  margin: 0;
+  margin: 0 auto;
 }
+
 
 .testimony-section .owl-carousel .owl-stage-outer {
   padding: 1em 0 2em 0;

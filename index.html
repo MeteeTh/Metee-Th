@@ -11,6 +11,15 @@
     <!-- Primary Meta Tags -->
     <title>Metee Thoenburin</title>
 
+    <script>
+        // เช็ค URL
+        if (!window.location.pathname.endsWith('.html')) {
+            // เปลี่ยน URL ไปยังหน้า .html ที่ตรงกัน
+            let newUrl = window.location.pathname + '.html';
+            window.history.replaceState({}, '', newUrl);
+        }
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -58,6 +67,8 @@
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/view.css">
     <link rel="stylesheet" href="css/tooltip.css">
+
+ 
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -261,7 +272,7 @@
                                     I try to adapt to different
                                     situations smoothly. While I may appear reserved at first, once you get to know me,
                                     open up, and become closer, I am
-                                    actually a very fun and lively person 😆. I am an
+                                    actually a enjoyable person 😆. I am an
                                     <a href="https://www.simplypsychology.org/what-is-an-omnivert-meaning-and-traits.html#:~:text=An%20omnivert%20is%20an%20individual,these%20personalities%20at%20various%20times."
                                         target="_blank" class="hover-underline-animation"
                                         title="What is Omnivert?">Omnivert <i class="fas fa-external-link-alt"
@@ -3517,10 +3528,19 @@
                         ซึ่งจะสะท้อนถึงความมุ่งมั่นและการเติบโตในด้านต่างๆ ที่เกี่ยวข้องกับการศึกษาและการทำงาน
                     </p>
                 </div>
-
             </div>
+
             <div class="row ftco-animate">
                 <div class="col-md-12">
+
+
+                    <link rel="stylesheet" href="css/onoff.css">
+
+                    <label for="toggle" class="onoff">
+                        <input type="checkbox" checked id="toggle">
+                        <span class="slideronoff"></span>
+                    </label>
+
                     <div class="carousel-testimony owl-carousel">
 
                         <!-- อาจารย์ติ๊ก -->
@@ -3529,11 +3549,14 @@
 
                                 <div class="text lang-en">
                                     <span class="fa fa-quote-left"></span>
-                                    <p class="mb-4 pl-5">Metee is a determined, dedicated, and inquisitive individual
+                                    <p class="mb-4 pl-5">
+                                        Metee is a determined, dedicated, and inquisitive individual
                                         who consistently demonstrates his full potential in every
                                         activity, excelling in both academics and team work. I am confident that Metee
                                         will succeed in everything he aspires to
-                                        and become a key contributor to society in the future.</p>
+                                        and become a key contributor to society in the future.
+                                    </p>
+
                                     <div class="d-flex align-items-center">
                                         <div class="user-img"
                                             style="background-image: url(images/professor/juthatip-chaikhambung.webp)">
@@ -3560,9 +3583,9 @@
                                             style="background-image: url(images/professor/juthatip-chaikhambung.webp)">
                                         </div>
                                         <div class="pl-3">
-                                            <p class="name">ผู้ช่วยศาสตราจารย์ ดร.</p>
-                                            <p class="name">จุฑาทิพย์ ไชยกำบัง</p>
-                                            <span class="position">อาจารย์ที่ปรึกษา โปรเจกต์ Web Application</span>
+                                            <p class="name">ผู้ช่วยศาสตราจารย์ ดร. จุฑาทิพย์ ไชยกำบัง</p>
+                                            <!-- <p class="name">จุฑาทิพย์ ไชยกำบัง</p> -->
+                                            <span class="position">อาจารย์ที่ปรึกษาโปรเจกต์ Web Application</span>
                                         </div>
                                     </div>
                                     <div class="container mt-2">
@@ -3609,8 +3632,7 @@
                                             style="background-image: url(images/professor/sompejch-junlabuddee.webp)">
                                         </div>
                                         <div class="pl-3">
-                                            <p class="name">อาจารย์ ดร.</p>
-                                            <p class="name">สมเพ็ชร จุลลาบุดดี</p>
+                                            <p class="name">อาจารย์ ดร. สมเพ็ชร จุลลาบุดดี</p>
                                             <span class="position">อาจารย์ที่ปรึกษาชั้นปีและโปรเจกต์ UX/UI</span>
                                         </div>
                                     </div>
@@ -3636,7 +3658,8 @@
                                         </div>
                                         <div class="pl-3">
                                             <p class="name">Dr. Kittiya Suthiprapa</p>
-                                            <span class="position">Traineeships Advisor and WiL project coordinator</span>
+                                            <span class="position">Traineeships Advisor and WiL project
+                                                coordinator</span>
                                         </div>
                                     </div>
                                     <div class="container mt-2">
@@ -3654,9 +3677,9 @@
                                             style="background-image: url(images/professor/kittiya-suthiprapa.webp)">
                                         </div>
                                         <div class="pl-3">
-                                            <p class="name">อาจารย์ ดร.</p>
-                                            <p class="name">กิตติยา สุทธิประภา</p>
-                                            <span class="position">อาจารย์ที่ปรึกษา Traineeships และผู้ประสานงานโครงการฯ WiL</span>
+                                            <p class="name">อาจารย์ ดร. กิตติยา สุทธิประภา</p>
+                                            <span class="position">อาจารย์ที่ปรึกษา Traineeships และผู้ประสานงานโครงการฯ
+                                                WiL</span>
                                         </div>
                                     </div>
                                     <div class="container mt-2">
@@ -3668,13 +3691,18 @@
                         </div> -->
 
                         <!-- อาจารย์ตาล -->
-                        <!-- <div class="item">
+                        <div class="item">
                             <div class="testimony-wrap py-4">
                                 <div class="text lang-en">
                                     <span class="fa fa-quote-left"></span>
-                                    <p class="mb-4 pl-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Placeat expedita nemo numquam eos delectus tenetur. Quis eos officia dolorum
-                                        enim ad autem obcaecati nam aperiam id dolore, voluptatum, tempora facere?</p>
+                                    <p class="mb-4 pl-5">Metee is a student with strong coding skills. He efficiently
+                                        developed a website to organize the information system. This project reflects
+                                        his excellent understanding of
+                                        user needs, data organization, application of technology, demonstrates
+                                        responsibility, problem-solving
+                                        abilities, leadership, and effective teamwork. I'm confident that he has high
+                                        potential to create
+                                        valuable work in the future.</p>
                                     <div class="d-flex align-items-center">
                                         <div class="user-img"
                                             style="background-image: url(images/professor/suwannee-hoaihongthong.webp)">
@@ -3692,16 +3720,21 @@
                                 </div>
                                 <div class="text lang-th" style="display: none;">
                                     <span class="fa fa-quote-left"></span>
-                                    <p class="mb-4 pl-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Placeat expedita nemo numquam eos delectus tenetur. Quis eos officia dolorum
-                                        enim ad autem obcaecati nam aperiam id dolore, voluptatum, tempora facere?</p>
+                                    <p class="mb-4 pl-5">เมธีเป็นนักศึกษาที่มีความสามารถด้านการ Coding
+                                        เขาพัฒนาเว็บไซต์สำหรับจัดระบบสารสนเทศได้อย่างมีประสิทธิภาพ
+                                        โครงงานนี้สะท้อนถึงความเข้าใจผู้ใช้ การจัดระบบข้อมูล
+                                        และการประยุกต์เทคโนโลยีได้อย่างดีเยี่ยม
+                                        มีความรับผิดชอบและความสามารถในการแก้ปัญหา
+                                        พร้อมทั้งมีภาวะผู้นำและทำงานร่วมกับทีมได้ดี
+                                        เชื่อมั่นว่าเขามีศักยภาพสูงในการสร้างสรรค์ผลงานที่มีคุณค่าในอนาคต
+                                    </p>
                                     <div class="d-flex align-items-center">
                                         <div class="user-img"
                                             style="background-image: url(images/professor/suwannee-hoaihongthong.webp)">
                                         </div>
                                         <div class="pl-3">
-                                            <p class="name">อาจารย์ ดร.</p>
-                                            <p class="name">สุวรรณี ห้วยหงษ์ทอง</p>
+                                            <p class="name">อาจารย์ ดร. สุวรรณี ห้วยหงษ์ทอง</p>
+                                            <!-- <p class="name">สุวรรณี ห้วยหงษ์ทอง</p> -->
                                             <span class="position">อาจารย์ที่ปรึกษาโปรเจกต์ Board Game Catalog Dynamic
                                                 Website</span>
                                         </div>
@@ -3712,12 +3745,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="ftco-section bg-light" id="certificates-section">
         <div class="container-fluid px-md-4">
